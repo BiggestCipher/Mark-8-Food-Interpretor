@@ -42,19 +42,24 @@ export default function App() {
 
   return (
     <div className="App">
-      <h1>Food Interpretor</h1>
+      <h1 style={{ margin: "3.5rem", fontSize: "2.5rem" }}>Food Interpretor</h1>
       <input
         onChange={changeHandler}
         value={Food}
         placeholder={"Enter any Food Emoji"}
-        style={{ padding: "1em" }}
+        style={{ padding: "0.5rem", fontSize: "1.5rem" }}
       />
-      <h2> {Food} </h2> {}
-      <h3> {meaning} </h3> {}
+      <h2 style={{ fontSize: " 3rem" }}> {Food} </h2> {}
+      <h3 style={{ fontSize: " 2rem" }}> {meaning} </h3> {}
       {Foods.map((Food) => (
         <span
           onClick={() => FoodClickHandler(Food)}
-          style={{ fontsize: "2rem", padding: "1rem", cursor: "pointer" }}
+          style={{
+            fontSize: "2.5rem",
+            margin: "8rem",
+            padding: "4rem",
+            cursor: "pointer"
+          }}
         >
           {""}
           {Food}{" "}

@@ -1,4 +1,12 @@
 .App {
   font-family: sans-serif;
   text-align: center;
+  padding: 3.5rem 4rem;
+  margin: auto;
+  background-color: lightblue;
+}
+
+h1,
+h3 {
+  color: purple;
 }
